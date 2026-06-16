@@ -1,13 +1,14 @@
+\setlength{\emergencystretch}{3em}
+
 \usepackage[margin=0.8in]{geometry}
 
-\usepackage[english]{babel}
+\usepackage[spanish]{babel}
 \usepackage{csquotes}
 
 % ----- Cosas varias -----
 
 \usepackage{parskip}
 \usepackage{multicol}
-\usepackage{lmodern}
 \usepackage{authblk}
 
 % - Figuras 
@@ -16,17 +17,27 @@
 \usepackage{wrapfig}
 \usepackage{graphicx}
 \usepackage{float}
+\usepackage{subcaption}
+\usepackage{booktabs}
 
 % - Matemáticas y fuentes
 
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{xcolor}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{bm}
 
+% - Física
+\usepackage{physics}
+\usepackage{siunitx}
+\AtBeginDocument{\RenewCommandCopy\qty\SI}
 % ----- Bibliografía -----
 
-\usepackage[sorting=none]{biblatex}
-\addbibresource{biblio}
+\usepackage{xurl}
+\usepackage[backend=biber, sorting=none]{biblatex}
+\addbibresource{biblio.bib}
 
 
 % ----- Cositas de arriba de las páginas -----
